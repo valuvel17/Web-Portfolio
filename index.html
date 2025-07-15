@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentina Web Portfolio</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/fanta.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/">Valentina V</a>
+      <nav>
+        <a target="_blank" href="https://github.com/valuvel17?tab=repositories">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/valentina-velázquez-b41a67284/"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="intro-header">
+          <h1>Hi!!! I'm Valentina...</h1>
+          <p>
+            Systems Engineering student at
+            <em>Universidad ORT Uruguay</em>, based in Montevideo 🇺🇾.
+          </p>
+        </div>
+
+        <h5 class="intro-description">
+          I’m passionate about software development and always eager to take on
+          new challenges. I enjoy working in collaborative environments where I
+          can grow, contribute, and learn from others.
+        </h5>
+        <h5 class="intro-description">
+          Currently, I'm working as a teaching assistant in Mathematics and
+          Software Engineering at my university
+        </h5>
+
+        <div class="links-container">
+          <i class="fa-solid fa-arrow-right link-arrow"></i>
+          <a href="mailto:vvelazquez2801@gmail.com">Email me</a>
+          <a
+            target="_blank"
+            href="https://github.com/valuvel17?tab=repositories"
+            >Github
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/valentina-velázquez-b41a67284/"
+            >Linkedin
+          </a>
+        </div>
+
+        <div id="play-game">
+          <button onclick="playGame()">Play game??</button>
+        </div>
+        <div id="bug-game" style="display: none">
+          <h3 id="score">Score: 0</h3>
+          <h4 id="lives">Lives: 3</h4>
+          <p id="game-over-msg" style="display: none">
+            Game Over! Final score: <span id="final-score"></span>
+          </p>
+          <button id="reset-btn" style="display: none" onclick="resetGame()">
+            :c
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technologies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JavaScript</td>
+              <td>Node.js | React | Jest</td>
+            </tr>
+            <tr>
+              <td>Web</td>
+              <td>HTML | CSS | Blazor | ASP.NET</td>
+            </tr>
+            <tr>
+              <td>C#</td>
+              <td>.NET | Entity Framework | LINQ</td>
+            </tr>
+            <tr>
+              <td>Databases</td>
+              <td>SQL Server | PostgreSQL | MongoDB</td>
+            </tr>
+            <tr>
+              <td>Tools</td>
+              <td>Git | GitHub | Azure | Docker | Dbeaver</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Lastest Projects</h2>
+        <div class="cards-grid">
+          <div class="project-card">
+            <div>
+              <p>July 15, 2025</p>
+              <h4>Title</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>exampleTech</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>exampleTech2</p>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus, voluptas quasi earum voluptatibus ea consequuntur?
+                Dolorum consequuntur animi magnam repudiandae.
+              </p>
+              <div class="project-links">
+                <a target="_blank" href="/">Live</a>
+                <a target="_blank" href="/">GitHub</a>
+              </div>
+            </div>
+            <div class="img-div">
+              <img src="./assets/images/example.png" class="big-img" alt="thumbnail" />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <p>July 15, 2025</p>
+              <h4>Title</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>exampleTech</p>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                accusantium, et commodi illum maiores alias quae nihil, porro
+                fugit impedit recusandae provident pariatur. Est magni minus
+                saepe tenetur ipsum corrupti.
+              </p>
+              <div class="project-links">
+                <a target="_blank" href="/">Live</a>
+                <a target="_blank" href="/">GitHub</a>
+              </div>
+            </div>
+            <div class="img-div">
+              <img src="./assets/images/example.png" class="big-img" alt="thumbnail" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <audio id="gameover-sound" src="./assets/sounds/sad_beep.mp3"></audio>
+      <audio id="squish-sound" src="./assets/sounds/bug_pops.mp3"></audio>
+    </main>
+    <footer>
+      <p>
+        By <a href="/">Valentina Velázquez</a> ⭐ the repo on
+        <a target="_blank" href="https://github.com/valuvel17/Web-Portfolio"
+          >Github</a
+        >
+      </p>
+    </footer>
+    <script src="./scripts/main.js">
+
+    </script>
+  </body>
+</html>
